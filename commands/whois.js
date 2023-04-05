@@ -19,7 +19,7 @@ module.exports = {
             if(!member) return message.channel.send("The user isn't in this server!")
         const canvas= Canvas.createCanvas(576,324)
         const ctx=canvas.getContext("2d")
-        const background=await Canvas.loadImage("canvas/welcome.png")
+        const background=await Canvas.loadImage("canvas/welcome1.png")
         ctx.drawImage(background,0,0,canvas.width,canvas.height)
         ctx.strokeStyle = colors.black;
         ctx.strokeRect(0,0,canvas.width,canvas.height)
