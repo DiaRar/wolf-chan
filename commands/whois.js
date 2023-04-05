@@ -14,7 +14,7 @@ module.exports = {
             }else {
                 user = message.mentions.users.first()  || client.users.cache.get(args[0])
             }
-            if(!user) return message.channel.send("Sorry, i couldn't find that user")
+            if(!user) return message.channel.send("Sorry, I couldn't find that user")
         let member=message.guild.member(user);
             if(!member) return message.channel.send("The user isn't in this server!")
         const canvas= Canvas.createCanvas(576,324)
